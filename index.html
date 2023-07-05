@@ -8,27 +8,46 @@
 </head>
 <body>
 <div class="wrapper">
-    <h1>Coffee!</h1>
-    <div class="container">
-        <form>
-            <label for="roast-selection"></label>
-            <select id="roast-selection">
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
-            </select>
-            <input id="submit" type="submit"/>
-        </form>
+    <div class="coffee-header d-flex justify-content-center">
+        <h1>Coffee!</h1>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="column">
-                <header>NAME</header>
-                <p>ROAST</p>
+    <hr>
+    <div class="container d-flex flex-wrap ">
+        <div class="row col-lg-6 col-12">
+            <div class="col">
+                <!--        Drop Down List-->
+                <form>
+                    <label for="roast-selection"></label>
+                    <select id="roast-selection">
+                        <option>all</option>
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                    <input id="submit" type="submit"/>
+                </form>
+            </div>
+        </div>
+        <!--        End Drop Down List-->
+    </div>
+    <!--    Coffee Table-->
+    <div class="container hero d-flex flex-wrap ">
+        <div class="row col-lg-6 col-12">
+            <div class="col">
+                <table>
+                    <thead>
+                    <tr class="table-title ">
+                        <th>ID</th>
+                        <th>NAME</th>
+                        <th>ROAST</th>
+                    </tr>
+                    </thead>
+                    <tbody id="coffees"></tbody>
+                </table>
             </div>
         </div>
     </div>
-</div>
+    <!--    End Coffee Table-->
 </div>
 
 <script src="main.js"></script>
