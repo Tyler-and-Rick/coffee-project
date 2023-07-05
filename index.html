@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
+<div class="wrapper">
     <h1>Coffee!</h1>
+    <div class="container">
+        <form>
+            <label for="roast-selection"></label>
+            <select id="roast-selection">
+                <option>light</option>
+                <option>medium</option>
+                <option>dark</option>
+            </select>
+            <input id="submit" type="submit"/>
+        </form>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <header>NAME</header>
+                <p>ROAST</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
-    <form>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <input id="submit" type="submit" />
-    </form>
-
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>ROAST</th>
-            </tr>
-        </thead>
-        <tbody id="coffees"></tbody>
-    </table>
-
-    <script src="main.js"></script>
+<script src="main.js"></script>
+</div>
 </body>
 </html>
