@@ -3,7 +3,7 @@
 const searchInputElement = document.querySelector("#coffee-search");
 
 function renderCoffee(coffee) {
-    let html = '<div class="coffee">';
+    let html = '<div class="d-flex coffee col-6">';
     // html += '<p>' + coffee.id + '</p>';
     html += '<h3>' + coffee.name + '</h3>';
     html += '<p>' + coffee.roast + '</p>';
@@ -37,7 +37,7 @@ function searchCoffees(input) {
     const searchValue = searchInputElement.value;
     const coffeeSearchArray = [];
     coffees.forEach(function(coffee){
-        if (coffee.name.toLowerCase().includes(searchValue) || (coffee.roast.toLowerCase().includes(searchValue)))  {
+        if (coffee.name.toLowerCase().includes(searchValue) && (coffee.roast.toLowerCase().includes(searchValue)))  {
             coffeeSearchArray.push(coffee);
         }
     })
@@ -64,10 +64,11 @@ let coffees = [
 ];
 
 let tbody = document.querySelector('#coffees');
-let submitButton = document.querySelector('#submit');
+let dropdown = document.querySelector('#roast-selection');
 let roastSelection = document.querySelector('#roast-selection');
+
 searchInputElement.addEventListener('keyup', searchCoffees);
 
 tbody.innerHTML = renderCoffees(coffees);
 
-submitButton.addEventListener('click', updateCoffees);
+dropdown.addEventListener('change', updateCoffees);

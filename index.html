@@ -12,37 +12,33 @@
         <h1>Coffee!</h1>
     </div>
     <hr>
-    <div class="container ">
+    <div class="container">
         <div class="row">
-            <div class="col d-flex col-6 justify-content-evenly">
-                <div id="coffees"></div>
-<!--                <table>-->
-<!--                    <thead>-->
-<!--                    <tr class="table-title ">-->
-<!--                        <th>ID</th>-->
-<!--                        <th>NAME</th>-->
-<!--                        <th>ROAST</th>-->
-<!--                    </tr>-->
-<!--                    </thead>-->
-<!--                    <div id="coffees"></div>-->
-<!--                </table>-->
+<!--            Coffees Start-->
+            <div class="col d-flex flex-wrap col-6 justify-content-start align-items-center ">
+                <div id="coffees" class="coffee d-flex flex-wrap flex-row gap-3 col-12"></div>
             </div>
-            <div class="col d-flex justify-content-center col-6">
-                <form>
+<!--            Coffees End-->
+
+<!--            Start Drop Down and Search Bar-->
+            <div class="col d-flex justify-content-center container-fluid">
+                <form class="col-8">
                     <label for="roast-selection"></label>
-                    <select id="roast-selection">
+                    <h5>Roast</h5>
+                    <select id="roast-selection" class="col-12">
                         <option>all</option>
                         <option>light</option>
                         <option>medium</option>
                         <option>dark</option>
                     </select>
+                    <h5 class="py-2">Coffee Name</h5>
                     <div class="input-group">
-                        <input id="coffee-search" type="search" autocomplete="on" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+
+                        <input id="coffee-search" type="search" autocomplete="on" class="form-control" placeholder="Search" aria-label="Search"/>
                     </div>
-                    <input id="submit" type="submit"/>
                 </form>
             </div>
-
+<!--            End Drop Down and Search Bar-->
         </div>
     </div>
     <script src="main.js"></script>

@@ -1,5 +1,5 @@
 body {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 table {
@@ -14,6 +14,14 @@ td, th {
 
 .table-title {
     display: none;
+}
+
+.coffee p {
+    color: gray;
+}
+
+.coffee {
+
 }
 
 
