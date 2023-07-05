@@ -3,12 +3,15 @@
 const searchInputElement = document.querySelector("#coffee-search");
 
 function renderCoffee(coffee) {
-    let html = '<div class="d-flex coffee col-6">';
-    // html += '<p>' + coffee.id + '</p>';
-    html += '<h3>' + coffee.name + '</h3>';
-    html += '<p>' + coffee.roast + '</p>';
-    html += '</div>';
-
+    // let coffeeImage = coffee.image ? coffee.image : "http://via.placeholder.com/150";
+    let html = `
+        <div class="col-6 coffee">
+            <div class="coffee-card d-flex gap-3">
+                <h3>${coffee.name}</h3>
+                <p>${coffee.roast}</p>
+            </div>
+        </div>
+    `;
     return html;
 }
 
@@ -29,15 +32,19 @@ function updateCoffees(e) {
             return coffee.roast.toLowerCase() === selectedRoast.toLowerCase();
         });
     }
+    // search logic here
     tbody.innerHTML = renderCoffees(filteredCoffees);
 
 }
 
 function searchCoffees(input) {
+    const dropdownValue = dropdown.value;
     const searchValue = searchInputElement.value;
     const coffeeSearchArray = [];
     coffees.forEach(function(coffee){
-        if (coffee.name.toLowerCase().includes(searchValue) && (coffee.roast.toLowerCase().includes(searchValue)))  {
+        if(coffee.name.toLowerCase().includes(searchValue) && dropdownValue === "all"){
+            coffeeSearchArray.push(coffee);
+        } else if (coffee.name.toLowerCase().includes(searchValue) && (coffee.roast.toLowerCase().includes(dropdownValue)))  {
             coffeeSearchArray.push(coffee);
         }
     })
@@ -47,7 +54,7 @@ function searchCoffees(input) {
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 let coffees = [
-    {id: 1, name: 'Light City', roast: 'light'},
+    {id: 1, name: 'Light City', roast: 'light', },
     {id: 2, name: 'Half City', roast: 'light'},
     {id: 3, name: 'Cinnamon', roast: 'light'},
     {id: 4, name: 'City', roast: 'medium'},

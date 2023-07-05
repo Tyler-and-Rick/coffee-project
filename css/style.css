@@ -1,5 +1,5 @@
 body {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 table {
@@ -18,10 +18,25 @@ td, th {
 
 .coffee p {
     color: gray;
+    margin: unset;
+    align-self: flex-end;
+    font-size: 20px;
 }
 
-.coffee {
-
+.coffee h3{
+    font-size: 30px;
+    align-items: end;
+    margin: unset;
 }
 
+.coffee-row {
+    align-items: end;
+}
 
+.coffee-card {
+    padding: unset;
+}
+
+.col-wrap {
+    padding: unset;
+}
