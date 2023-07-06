@@ -1,5 +1,8 @@
 body {
     padding-bottom: 10px;
+    background-image: url("/img/coffee-image.jpeg");
+    background-size: cover;
+    color: #fff;
 }
 
 .table-title {
