@@ -3,15 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div class="wrapper">
-    <div class="coffee-header d-flex justify-content-center p-2">
-        <h1>Coffee!</h1>
-    </div>
+    <header class="header-custom d-flex flex-wrap justify-content-between">
+<!--        Coffee Store Logo-->
+        <div>
+            <a href="/"
+               class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none gap-5">
+                <div class="coffee-icon-wrapper ">
+                    <img src="img/coffee-icon.jpeg">
+                </div>
+                <span class="coffee-store fs-4">Coffee Store</span>
+            </a>
+        </div>
+<!--        End of Coffee Store Logo-->
+<!--        4 Hyperlinks-->
+        <div class=" d-flex ">
+            <ul class="list-items d-flex align-items-center gap-5">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+<!--        End of 4 Hyperlinks-->
+    </header>
     <div class="hr-border">
         <hr>
     </div>
