@@ -1,8 +1,11 @@
 body {
     padding-bottom: 10px;
-    background-image: url("/img/coffee-image.jpeg");
+    background-image: url("/img/coffee-image3.jpeg");
+    background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
 }
 
 .table-title {
@@ -18,6 +21,7 @@ body {
     padding-top: unset;
     font-size: 55px;
     margin: unset;
+    color: white;
 }
 
 .coffee p {
@@ -38,7 +42,7 @@ body {
 }
 
 .coffee-card {
-    padding: unset;
+    color: white;
 }
 
 .col-wrap {
@@ -48,12 +52,15 @@ body {
 .h2-coffee {
     padding: unset;
     margin: unset;
+    color: white;
 }
 
 .roast-custom {
     margin: unset;
+    color: white;
 }
 
 .coffee-custom {
     margin: unset;
+    color: white;
 }
