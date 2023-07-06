@@ -42,11 +42,8 @@ body {
     margin: unset;
 }
 
-.coffee-row {
-    align-items: end;
-}
-
 .coffee-card {
+    align-items: end;
     color: white;
 }
 
