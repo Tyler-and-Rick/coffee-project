@@ -69,6 +69,7 @@ function addCoffees(e) {
     console.log(coffee);
 
     coffees.push(coffee);
+    tbody.innerHTML = renderCoffees(coffees);
 
 }
 
