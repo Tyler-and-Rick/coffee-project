@@ -7,8 +7,9 @@ body {
 }
 
 .coffee-header h1{
-    padding-top: 20px;
+    padding-top: unset;
     font-size: 55px;
+    margin: unset;
 }
 
 .coffee p {
