@@ -2,18 +2,13 @@ body {
     padding-bottom: 10px;
 }
 
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
-}
-
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
-}
-
 .table-title {
     display: none;
+}
+
+.coffee-header h1{
+    padding-top: 20px;
+    font-size: 70px;
 }
 
 .coffee p {
@@ -39,4 +34,13 @@ td, th {
 
 .col-wrap {
     padding: unset;
+}
+
+.h2-coffee {
+    padding: unset;
+    margin: unset;
+}
+
+.h5-roast {
+    padding-top: 10px;
 }

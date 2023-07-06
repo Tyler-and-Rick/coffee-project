@@ -8,45 +8,58 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="coffee-header d-flex justify-content-center">
+    <div class="coffee-header d-flex justify-content-center p-2">
         <h1>Coffee!</h1>
     </div>
     <hr>
     <div class="container">
         <div class="row">
-<!--            Coffees Start-->
+            <!--            Coffees Start-->
             <div class="col col-wrap d-flex flex-wrap col-8 justify-content-start align-items-center ">
                 <div id="coffees" class="coffee coffee-row row w-100">
                 </div>
             </div>
-<!--            Coffees End-->
+            <!--            Coffees End-->
 
-<!--            Start Drop Down and Search Bar-->
+            <!--            Start Drop Down and Search Bar-->
             <div class="col d-flex justify-content-center container-fluid">
                 <form class="col-12">
                     <label for="roast-selection"></label>
                     <h5>Roast</h5>
-                    <select id="roast-selection" class="col-12">
+                    <select id="roast-selection" class="rs-dropdown col-12 broder border-secondary-subtle rounded p-2">
                         <option>all</option>
                         <option>light</option>
                         <option>medium</option>
                         <option>dark</option>
                     </select>
                     <h5 class="py-2">Coffee Name</h5>
-                    <div class="input-group">
-                        <input id="coffee-search" type="search" autocomplete="on" class="form-control" placeholder="Search" aria-label="Search"/>
+                    <div class="input-group ">
+                        <input id="coffee-search" type="search" autocomplete="on" class="form-control"
+                               placeholder="Search" aria-label="Search"/>
                     </div>
-                    <hr class=" ">
-                    <label class="add-coffee"></label>
-                    <h2 class="justify-content-center">Add Coffee</h2>
+                    <label for="roast-addition"></label>
+                    <!--           End Drop Down and Search Bar-->
+                    <hr>
+                    <!--           Add Coffee Section-->
+                    <div class=" d-flex justify-content-center ">
+                        <h2 class="h2-coffee">Add Coffee</h2>
+                    </div>
+                    <h5 class="h5-roast">Roast</h5>
+                    <select id="roast-addition" class="rs-dropdown col-12 broder border-secondary-subtle rounded p-2">
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                    <h5 class="py-2">Name</h5>
+                    <div class="input-group">
+                        <input id="coffee-addition" type="search" autocomplete="on" class="form-control"
+                               placeholder="Search" aria-label="Search"/>
+                    </div>
+                    <label class="new-coffee"></label>
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <!--           End of Coffee Section-->
                 </form>
-<!--                <form class="col-12">-->
-<!--                    <label class="add-coffee">-->
-<!--                        <h5>Add Coffee</h5>-->
-<!--                    </label>-->
-<!--                </form>-->
             </div>
-<!--            End Drop Down and Search Bar-->
         </div>
     </div>
     <script src="main.js"></script>
