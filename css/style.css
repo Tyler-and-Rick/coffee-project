@@ -1,11 +1,14 @@
 body {
     padding-bottom: 10px;
-    background-image: url("/img/coffee-image3.jpeg");
-    background-repeat: no-repeat;
+    background-image: url(https://media.giphy.com/media/J0nJNHnnukpJm/giphy.gif);
+    background-repeat: repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: white;
+    font-family: news-gothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .table-title {
