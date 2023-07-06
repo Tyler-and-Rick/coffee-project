@@ -6,6 +6,11 @@ body {
     display: none;
 }
 
+.hr-border {
+   width: 87%;
+    margin-left: 95px;
+}
+
 .coffee-header h1{
     padding-top: unset;
     font-size: 55px;
@@ -42,6 +47,10 @@ body {
     margin: unset;
 }
 
-.h5-roast {
-    padding-top: 10px;
+.roast-custom {
+    margin: unset;
+}
+
+.coffee-custom {
+    margin: unset;
 }
