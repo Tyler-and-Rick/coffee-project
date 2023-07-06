@@ -52,6 +52,33 @@ function searchCoffees(input) {
 
 }
 
+function addCoffees(e) {
+    e.preventDefault();
+    const userDropdownAddition = dropdownAddition.value;
+    const userSearchAddition = document.querySelector('#coffee-addition').value.toLowerCase();
+
+    console.log(userDropdownAddition);
+
+    let coffee = {
+        id: identifier,
+        name: userSearchAddition,
+        roast: userDropdownAddition,
+    }
+
+    identifier++;
+    console.log(coffee);
+
+    coffees.push(coffee);
+
+}
+
+
+
+
+
+
+
+
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 let coffees = [
     {id: 1, name: 'Light City', roast: 'light', },
@@ -73,6 +100,13 @@ let coffees = [
 let tbody = document.querySelector('#coffees');
 let dropdown = document.querySelector('#roast-selection');
 let roastSelection = document.querySelector('#roast-selection');
+let dropdownAddition = document.querySelector('#roast-addition');
+
+let identifier = coffees.length + 1;
+
+let submitButton = document.querySelector('#addition-submit');
+
+submitButton.addEventListener('click', addCoffees);
 
 searchInputElement.addEventListener('keyup', searchCoffees);
 
