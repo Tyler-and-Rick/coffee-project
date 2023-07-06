@@ -5,7 +5,7 @@ const searchInputElement = document.querySelector("#coffee-search");
 function renderCoffee(coffee) {
     // let coffeeImage = coffee.image ? coffee.image : "http://via.placeholder.com/150";
     let html = `
-        <div class="col-6 coffee">
+        <div class="col-6 coffee py-3">
             <div class="coffee-card d-flex gap-3">
                 <h3>${coffee.name}</h3>
                 <p>${coffee.roast}</p>
