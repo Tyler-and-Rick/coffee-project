@@ -4,7 +4,7 @@ const searchInputElement = document.querySelector("#coffee-search");
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 let coffees = [
-    {id: 1, name: 'Light City', roast: 'lightsaber', },
+    {id: 1, name: 'Light City', roast: 'lightsaber'},
     {id: 2, name: 'Half City', roast: 'lightsaber'},
     {id: 3, name: 'Cinnamon', roast: 'lightsaber'},
     {id: 4, name: 'City', roast: 'mediumfalcon'},
@@ -33,7 +33,11 @@ function renderCoffee(coffee) {
         <div class="col-6 coffee py-3">
             <div class="coffee-card d-flex gap-3">
                 <h3>${coffee.name}</h3>
-                <p>${coffee.roast}</p>
+                <p>${coffee.roast} $4.99</p>
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
             </div>
         </div>
     `;
