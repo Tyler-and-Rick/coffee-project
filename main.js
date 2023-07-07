@@ -28,7 +28,7 @@ let coffees = [
 })()
 
 function renderCoffee(coffee) {
-    // let coffeeImage = coffee.image ? coffee.image : "http://via.placeholder.com/150";
+    let coffeeImage = coffee.image ? coffee.image : "http://via.placeholder.com/150";
     let html = `
         <div class="col-6 coffee py-3">
             <div class="coffee-card d-flex gap-3">
